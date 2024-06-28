@@ -1,0 +1,128 @@
+name: wger
+description: Self hosted workout, nutrition and weight manager.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+
+# Note: these versions are set automatically during build by the android-release.yml
+# github action, the current versions are ignored.
+#   - the version number is taken from the git tag vX.Y.Z
+#   - the build number is computed by reading the last one from the play store
+#     and increasing by one
+version: 1.7.5+46
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  android_metadata: ^0.2.1
+  collection: ^1.17.0
+  cupertino_icons: ^1.0.8
+  equatable: ^2.0.5
+  flutter_calendar_carousel: ^2.4.1
+  flutter_html: ^3.0.0-beta.2
+  flutter_typeahead: ^5.2.0
+  font_awesome_flutter: ^10.7.0
+  http: ^1.2.0
+  image_picker: ^1.1.0
+  intl: ^0.18.1
+  json_annotation: ^4.8.1
+  version: ^3.0.2
+  package_info_plus: ^8.0.0
+  provider: ^6.1.2
+  # Note, do not update rive! https://github.com/wger-project/flutter/issues/577
+  rive: ^0.12.4
+  shared_preferences: ^2.2.3
+  table_calendar: ^3.0.8
+  url_launcher: ^6.2.6
+  flutter_barcode_scanner: ^2.0.0
+  video_player: ^2.8.6
+  flutter_staggered_grid_view: ^0.7.0
+  carousel_slider: ^4.2.1
+  multi_select_flutter: ^4.1.3
+  flutter_svg: ^2.0.10+1
+  fl_chart: ^0.68.0
+  flutter_zxing: ^1.5.2
+  drift: ^2.16.0
+  path: ^1.8.3
+  path_provider: ^2.1.3
+  sqlite3_flutter_libs: ^0.5.20
+  get_it: ^7.6.8
+  flex_seed_scheme: ^1.5.0
+  flex_color_scheme: ^7.3.1
+  freezed_annotation: ^2.4.1
+  clock: ^1.1.1
+  flutter_svg_icons: ^0.0.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  build_runner: ^2.4.9
+  json_serializable: ^6.8.0
+  mockito: ^5.4.4
+  network_image_mock: ^2.1.1
+  flutter_lints: ^4.0.0
+  cider: ^0.2.7
+  drift_dev: ^2.17.0
+  freezed: ^2.5.2
+  golden_toolkit: ^0.15.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/animations/
+    - assets/images/
+    - assets/images/muscles/
+    - assets/images/muscles/main/
+    - assets/images/muscles/secondary/
+    - assets/icons/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: RobotoCondensed
+      fonts:
+        - asset: assets/fonts/RobotoCondensed-VariableFont_wght.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+
+  generate: true
